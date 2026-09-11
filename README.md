@@ -52,3 +52,19 @@ jupyter lab
 ## Entrega
 
 Antes de entregar, completa el objetivo, documenta la fuente de los datos, ejecuta el notebook de principio a fin y verifica que los resultados puedan reproducirse.
+
+## Tarea 3 — Segmentación MRI con LadderNet
+
+- [Notebook de solución](notebooks/actividad3_Lopez_Munoz.ipynb).
+- [Abrir directamente en Colab](https://colab.research.google.com/github/CaMunozS/topicos-avanzados/blob/main/notebooks/actividad3_Lopez_Munoz.ipynb).
+- [Plantilla original](notebooks/Tarea%2003.ipynb).
+- [Instrucciones y alcance de validación](docs/tarea3_validacion.md).
+
+La solución conserva las 39 celdas originales en su orden y agrega ocho notas metodológicas.
+Implementa P1 con 2 etapas, 15 filtros iniciales y profundidad 4; P2 compara tres candidatos
+de 3 etapas. P3 elige por validación y P4 muestra 10 predicciones del modelo seleccionado.
+
+En Colab, seleccionar GPU, ejecutar todas las celdas y autorizar Drive si se desea conservar
+los pesos. Los experimentos completos se reutilizan al ejecutar nuevamente con la misma
+configuración y partición. Guardar el notebook **con sus salidas** para la entrega académica.
+La validación técnica documentada no sustituye el entrenamiento completo ni sus métricas finales.

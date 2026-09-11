@@ -1,0 +1,87 @@
+{
+  "scope": "technical_validation_real_data_no_final_training",
+  "tensorflow": "2.18.1",
+  "keras": "3.15.1",
+  "original_cells_preserved": 39,
+  "cells": 47,
+  "unique_image_mask_pairs": 3929,
+  "patients": 110,
+  "splits": {
+    "train": {
+      "images": 3155,
+      "patients": 89
+    },
+    "val": {
+      "images": 361,
+      "patients": 10
+    },
+    "test": {
+      "images": 413,
+      "patients": 11
+    }
+  },
+  "metrics_known_cases": true,
+  "batch_invariance": true,
+  "precision_restored_after_clear_session": true,
+  "mixed_precision_cpu_smoke": true,
+  "augmentation_alignment": true,
+  "last_batch_included": true,
+  "architectures": [
+    {
+      "stages": 2,
+      "initial_filters": 15,
+      "depth": 4,
+      "parameters": 3107506,
+      "shared_blocks": 19,
+      "finite_train_step": true,
+      "weights_roundtrip": true,
+      "shape_512": true
+    },
+    {
+      "stages": 3,
+      "initial_filters": 15,
+      "depth": 4,
+      "parameters": 4662061,
+      "shared_blocks": 29,
+      "finite_train_step": true,
+      "weights_roundtrip": true,
+      "shape_512": true
+    },
+    {
+      "stages": 3,
+      "initial_filters": 24,
+      "depth": 4,
+      "parameters": 11930497,
+      "shared_blocks": 29,
+      "finite_train_step": true,
+      "weights_roundtrip": true,
+      "shape_512": true
+    },
+    {
+      "stages": 3,
+      "initial_filters": 16,
+      "depth": 5,
+      "parameters": 21233921,
+      "shared_blocks": 35,
+      "finite_train_step": true,
+      "weights_roundtrip": true,
+      "shape_512": true
+    }
+  ],
+  "integration_test": {
+    "scope": "reduced_real_data_integration_test_not_academic_metrics",
+    "image_size": 32,
+    "epochs": 2,
+    "train_images": 8,
+    "val_images": 4,
+    "test_images": 10,
+    "code_cells_executed": 21,
+    "errors": 0,
+    "completed_experiment_reuse_verified": true
+  },
+  "notebook_sha256": "b8ca0a75f27f8ae2d2f619fe0864cf999f7919342090777a1e53e77d6df78820",
+  "full_training_executed": false,
+  "teacher_architecture_verified": false,
+  "gpu_validated": false,
+  "public_roster": "names_only_personal_identifiers_to_be_added_in_private_submission"
+}
