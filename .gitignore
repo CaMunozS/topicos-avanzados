@@ -28,3 +28,10 @@ data/processed/*
 !data/processed/.gitkeep
 outputs/*
 !outputs/.gitkeep
+
+# Tarea 3: datos MRI y pesos producidos al ejecutar el notebook
+**/MRI_Images/
+**/MRI_Images.zip
+**/MRI_Images.zip.part
+**/outputs/tarea03/
+*.weights.h5
